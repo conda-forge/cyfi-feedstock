@@ -30,10 +30,10 @@ requirements:
     - geopandas
     - geopy
     - gitpython
-    - gradio
+    - gradio >=5.0
     - lightgbm
     - loguru
-    - matplotlib-base <3.8.0
+    - matplotlib-base
     - netCDF4
     - numpy
     - odc-stac
@@ -46,7 +46,7 @@ requirements:
     - pystac
     - pystac-client
     - python >={{ python_min }}
-    - scikit-learn
+    - scikit-learn >=1.4
     - seaborn
     - repro-zipfile
     - rioxarray
