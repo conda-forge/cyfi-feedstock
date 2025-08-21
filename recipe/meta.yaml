@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "cyfi" %}
-{% set version = "1.1.4" %}
+{% set version = "1.1.5" %}
 
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fc51b902813e7cb57f18780cc47050a7818219a4f6b2d9506ea3b06b0d789426
+  sha256: 57ee49ca13572d77ab0bd1800dd0b79bb6e79add2a8a0fcff6fadb88598ebdd7
 
 build:
   number: 0
