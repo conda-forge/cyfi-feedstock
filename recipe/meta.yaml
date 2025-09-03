@@ -51,7 +51,7 @@ requirements:
     - repro-zipfile
     - rioxarray
     - tqdm
-    - typer
+    - typer >=0.16.0
     - xarray
 
 test:
