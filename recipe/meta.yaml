@@ -1,6 +1,6 @@
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 {% set name = "cyfi" %}
-{% set version = "1.1.5" %}
+{% set version = "1.2.0" %}
 
 
 package:
@@ -9,18 +9,18 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 57ee49ca13572d77ab0bd1800dd0b79bb6e79add2a8a0fcff6fadb88598ebdd7
+  sha256: 495fc264cbb6d555b504569665e838d1ab4018ec99d8e953bf2705bb18d60bfa
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   entry_points:
     - cyfi=cyfi.cli:app
 
 requirements:
   host:
-    - flit-core >=3.2,<4
+    - uv-build >=0.11.7,<0.12.0
     - pip
     - python {{ python_min }}
   run:
