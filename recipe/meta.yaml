@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "cyfi" %}
-{% set version = "1.3.1" %}
+{% set version = "1.4.0" %}
 
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 763b6e63b497ab3dfaa484a9a5813c3609eb7ae43fd0f371ad1aee9ceb83696e
+  sha256: da02ff6f15ec097731de6886274de4a8493ca418aabdd643950c5b53192047d5
 
 build:
   number: 0
@@ -31,13 +31,13 @@ requirements:
     - geopy
     - gitpython
     - gradio >=5.0
-    - lightgbm
+    - lightgbm >=4
     - loguru
     - matplotlib-base
     - netCDF4
     - numpy
     - odc-stac
-    - opencv
+    - opencv >=4.4
     - pandas
     - planetary-computer
     - platformdirs
