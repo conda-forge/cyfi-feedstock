@@ -31,13 +31,13 @@ requirements:
     - geopy
     - gitpython
     - gradio >=5.0
-    - lightgbm
+    - lightgbm >=4
     - loguru
     - matplotlib-base
     - netCDF4
     - numpy
     - odc-stac
-    - opencv
+    - opencv >=4.4
     - pandas
     - planetary-computer
     - platformdirs
